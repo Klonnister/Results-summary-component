@@ -1,20 +1,13 @@
 :root {
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --gray-blue: hsl(224, 30%, 27%);
+    
     --light-red: hsl(0, 100%, 67%);
     --orangey-yellow: hsl(39, 100%, 56%);
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
-
-    --backblue1: hsl(252, 100%, 67%);
-    --backblue2: hsl(241, 81%, 54%);
-
-    --circle-violet: hsla(256, 72%, 46%, 1);
-    --circle-persian: hsla(241, 72%, 46%, 0);
-
-    --white: hsl(0, 0%, 100%);
-    --pale-blue: hsl(221, 100%, 96%);
-    --light-lavender: hsl(241, 100%, 89%);
-    --light-lavender2: hsla(241, 100%, 89%, 50%);
-    --gray-blue: hsl(224, 30%, 27%);
 
     font-size: 18px;    
     font-family: 'Hanken Grotesk', sans-serif;
@@ -22,75 +15,191 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: gray;
 }
 
-main {
-    min-height: 100vh;
+p {
+    font-size: .90rem;
+}
+
+.card {
+    background-color: var(--white);
+    width: 100%;    
+    border-radius: 20px;
+}
+
+.results-section {
+    background-image: linear-gradient(hsl(252, 84%, 60%), hsl(241, 81%, 54%));
+    padding: 1em 3em;
+    border-radius: 0 0 1.75em 1.75em;
+}
+
+.title {
+    font-size: 1em;   
+    font-weight: 400;
+}   
+
+.h1 {
+    text-align: center;
+    color: var(--light-lavender);
+    margin-top: 0.25em;
+}
+
+.circle {
+    padding: 1em;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    text-align: center;
+    width: 7.25em;
+    height: 7.25em;
+    margin: 1.5em auto;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card {
-    background-color: var(--white);
-    display: flex;
-}
-
-.results-section {
-    width: 50%;
-    background-image: linear-gradient(var(--backblue1), var(--backblue2));
-    padding: 1em;
-    border-radius: 20px;
-}
-
-.h1 {
-    font-size: .95rem;
-    color: var(--light-lavender);
-    margin-top: 0.25em;
-    font-weight: 400;
-    text-align: center;
-}
-
-.circle {
-    padding: 1em;   
-    background-image: linear-gradient(var(--circle-violet), var(--circle-persian));
-    border-radius: 100%;
-    text-align: center;
-    width: 40%;
-    margin: 1.25em auto;
+.circle h2 {
+    font-size: .85rem;
+    color: hsla(241, 100%, 89%, 50%);
+    margin-top: 0;
 }
 
 .circle span {
     display: block;
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
-    text-align: center
+    text-align: center;
+    font-style: normal;
+}   
+
+.great {
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin: .25em 0;
 }
 
-.circle p {
-    font-size: .65rem;
-    color: var(--light-lavender2);
+.great-desc {
+    text-align: center;
+    color: var(--light-lavender);
+    margin: 0 auto;
+    margin-bottom: 1.5em;    
+}
+
+.summary-section {
+    padding: 0 1.5em; 
+    padding-bottom: 2em;
+}
+
+.h2 {
+    color: var(--gray-blue);
+    font-weight: 600;
+    margin: 1.25em 0;
+}
+
+.category-c {
+    padding: 1rem;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.category-c img {
+    margin-right: .50em;
+}
+
+.category-c .category {
+    margin-right: auto;
+}
+
+.category-c .score {
+    color: var(--gray-blue);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 8%);
+    color: var(--light-red);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 8%);
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 8%);
+    color: var(--green-teal);
+}
+
+.visual {
+    background-color:hsla(234, 85%, 45%, 8%);
+    color: var(--cobalt-blue);
+}
+
+.button {
+    border: none;
+    background-color: var(--gray-blue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 50px;
+    margin-top: .50rem;
+
 }
 
 
 
 
+@media screen and (min-width: 485px) {
+    main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .card {
+        display: flex;
+        width: 25em;
+    }
 
+    .section {
+        width: 50%;
+    }
 
+    .results-section {
+        border-radius: 20px;
+        padding: 1em;
+    }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    .great-desc {
+    width: 25ch;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
 }
+
+/*
+
+*/ 
+
 
 .attribution { font-size: 0.68rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
