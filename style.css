@@ -164,7 +164,7 @@ p {
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 32em) {
     main {
         min-height: 100vh;
         display: flex;
@@ -174,7 +174,7 @@ p {
 
     .card {
         display: flex;
-        width: 32em;
+        max-width: 31.25em;
         margin: 0 0.50em;
     }
 
@@ -198,20 +198,17 @@ p {
 
     footer {
         position: absolute;
+        width: 35ch;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 0);
+        text-align: center;  
     }
     
     p, .button {
         font-size: .80em;
     }
 }
-
-/*
-
-*/ 
-
 
 .attribution { font-size: 0.68rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
