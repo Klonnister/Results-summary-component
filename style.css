@@ -115,6 +115,8 @@ p {
 
 .category-c .category {
     margin-right: auto;
+    font-weight: 500;
+    font-size: .90rem;
 }
 
 .category-c .score {
@@ -194,6 +196,10 @@ p {
     .category-c {
         padding: 0.60em;
         margin-bottom: 0.75em;
+    }
+
+    .category-c .category {
+        font-size: 0.80rem;
     }
 
     footer {
