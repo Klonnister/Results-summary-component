@@ -20,6 +20,8 @@
     padding: 0;
 }   
 
+/*I used mobile first workflow, all this code is for x-small screen sizes. At the bottom you'll find a media query rule for screen sizes larger than 32em*/
+
 p {
     font-size: .90rem;
 }
@@ -164,6 +166,8 @@ p {
     background-image: linear-gradient(hsla(252, 84%, 60%, 50%), hsla(241, 81%, 54%, 50%));
 }
 
+
+/*Here it is :D*/
 
 @media screen and (min-width: 32em) {
     main {
