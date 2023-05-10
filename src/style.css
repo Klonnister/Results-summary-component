@@ -1,0 +1,247 @@
+/*General styling*/
+:root {
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --gray-blue: hsl(224, 30%, 27%);    
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;  
+    font-weight: 500;  
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+p {
+    font-size: .90rem;
+}
+
+/*I used mobile first workflow, all this code is for x-small screen sizes. At the bottom you'll find a media query rule for screen sizes larger than 32em*/
+
+/*card style*/
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 12px 18px 20px hsla(252, 84%, 60%, 10%);
+    width: 100%;
+}
+
+.section {
+    padding: 1.5rem;
+}
+
+/*Purple section*/
+.results-section {
+    background-image: linear-gradient(hsl(252, 84%, 60%), hsl(241, 81%, 54%));
+    border-radius: 0 0 1.75em 1.75em;
+}
+
+.title {
+    font-size: 1rem;   
+    font-weight: 500;
+}   
+
+.h1 {
+    color: var(--light-lavender);
+    text-align: center;
+}
+
+/*Purple section: Circle and text*/
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+    margin: 1.25rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: normal;
+    display: block;
+}   
+
+.circle h2 {
+    font-size: .70rem;
+    font-weight: 500;
+    color: hsla(241, 100%, 89%, 50%);
+    margin-top: 0;
+}
+
+/*Purple section: Bottom text.*/
+.great {
+    font-weight: 500;
+    font-size: 1.35rem;
+    color: var(--white);
+    text-align: center;
+    margin-top: .25em;
+    margin-bottom: 0.75em;
+}
+
+.great-desc {
+    color: var(--light-lavender);
+    text-align: center;
+    width: 30ch;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+ 
+/*Summary section*/
+
+/*Summary heading*/
+.h2 {
+    color: var(--gray-blue);
+    margin-bottom: 1.25em;
+}
+
+/*Summary section: Categories.*/
+
+/*Categories general styling*/
+.category-c {
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    display: flex;
+}
+
+.category-c img {
+    margin-right: .50em;
+}
+
+.category-c .category {
+    font-weight: 500;
+    font-size: .90rem;
+    margin-right: auto;
+}
+
+.category-c .score {
+    color: var(--gray-blue);
+}
+
+/*Summary section: Category colors*/
+.reaction {
+    background-color: hsla(0, 100%, 67%, 8%);
+    color: var(--light-red);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 8%);
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 8%);
+    color: var(--green-teal);
+}
+
+.visual {
+    background-color:hsla(234, 85%, 45%, 8%);
+    color: var(--cobalt-blue);
+}
+
+/* Summary section: Continue button.*/
+.button {
+    font-size: 0.90rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--gray-blue);
+    width: 100%;
+    padding: 1em 0;
+    border: none;
+    border-radius: 50px;
+    margin-top: .50rem;
+    cursor: pointer;
+}
+
+.button:focus, .button:hover{
+    background-image: linear-gradient(hsl(252, 84%, 60%), hsl(241, 81%, 54%));
+}
+
+.button:active {
+    background-image: linear-gradient(hsla(252, 84%, 60%, 50%), hsla(241, 81%, 54%, 50%));
+}
+
+
+/*Media query for large devices*/
+
+@media screen and (min-width: 32em) {
+    /*general styling*/
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p, .button {
+        font-size: .80em;
+    }
+
+    /*Card style*/
+    .card {
+        max-width: 31.25em;
+        margin: 0 0.50em;
+        display: flex;
+    }
+
+    .section {
+        width: 50%;
+    }
+
+    /*Purple section*/
+    .results-section {
+        border-radius: 20px;
+    }
+
+    /*Purple section: Bottom text.*/
+    .great-desc {
+        width: 25ch;
+        margin-bottom: 0;
+    }
+
+
+    /*Summary section*/
+
+    /*Categories styling*/
+
+    .category-c {
+        padding: 0.60em;
+        margin-bottom: 0.75em;
+    }
+
+    .category-c .category {
+        font-size: 0.80rem;
+    }
+
+
+    /*footer*/
+    footer {
+        text-align: center;
+        width: 35ch;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);  
+    }
+}
+
+.attribution { font-size: 0.68rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
