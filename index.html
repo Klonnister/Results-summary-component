@@ -5,52 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Dennis Herrera">
   <meta name="description" content="This is a solution to the 'Results summary component' exercise from Frontend Mentor">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/src/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
-  <main>
-    <div class="card">
-      <section class="section results-section">
-        <h1 class="title h1">Your Result</h1>
-        <div class="circle">
-          <h2>
-            <span>76</span>
-            of 100
-          </h2>
-        </div>
-        <h3 class="great">Great</h3>
-        <p class="great-desc">You scored higher than 65% of the people who have taken these tests.</p>
-      </section>
+  <main class="card">
+    <section class="section results-section">
+      <h1 class="title h1">Your Result</h1>
+      <div class="circle">
+        <h2>
+          <span>76</span>
+          of 100
+        </h2>
+      </div>
+      <h3 class="great">Great</h3>
+      <p class="great-desc">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
 
-      <section class="section summary-section ">
-        <h2 class="title h2">Summary</h2>
-        <div class="category-c reaction">
-          <img src="images/icon-reaction.svg" alt="">
-          <h3 class="category">Reaction</h3>
-          <p class="score"><b>80</b> / 100</p>
-        </div>
-        <div class="category-c memory">
-          <img src="images/icon-memory.svg" alt="">
-          <h3 class="category">Memory</h3>
-          <p class="score"><b>92</b> / 100</p>
-        </div>
-        <div class="category-c verbal">
-          <img src="images/icon-verbal.svg" alt="">
-          <h3 class="category">Verbal</h3>
-          <p class="score"><b>61</b> / 100</p>
-        </div>
-        <div class="category-c visual">
-          <img src="images/icon-visual.svg" alt="">
-          <h3 class="category">Visual</h3>  
-          <p class="score"><b>72</b> / 100</p>
-        </div>
-        <button type="button" class="button">Continue</button>
-      </section>
-    </div>
+    <section class="section">
+      <h2 class="title h2">Summary</h2>
+      <div class="category-c reaction">
+        <img src="/src/images/icon-reaction.svg" alt="">
+        <h3 class="category">Reaction</h3>
+        <p class="score"><b>80</b> / 100</p>
+      </div>
+      <div class="category-c memory">
+        <img src="/src/images/icon-memory.svg" alt="">
+        <h3 class="category">Memory</h3>
+        <p class="score"><b>92</b> / 100</p>
+      </div>
+      <div class="category-c verbal">
+        <img src="/src/images/icon-verbal.svg" alt="">
+        <h3 class="category">Verbal</h3>
+        <p class="score"><b>61</b> / 100</p>
+      </div>
+      <div class="category-c visual">
+        <img src="/src/images/icon-visual.svg" alt="">
+        <h3 class="category">Visual</h3>  
+        <p class="score"><b>72</b> / 100</p>
+      </div>
+      <button type="button" class="button">Continue</button>
+    </section>
   </main>
 
   <footer>
