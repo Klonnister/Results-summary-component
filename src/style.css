@@ -98,7 +98,7 @@ p {
 .great-desc {
     color: var(--light-lavender);
     text-align: center;
-    width: 30ch;
+    max-width: 30ch;
     margin: 0 auto;
     margin-bottom: 1em;
 }
