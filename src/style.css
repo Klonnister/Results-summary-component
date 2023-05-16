@@ -184,7 +184,7 @@ p {
 
 @media screen and (min-width: 32em) {
     /*general styling*/
-    main {
+    body {
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -243,8 +243,7 @@ p {
         margin: 0 auto;
 
         @media screen and (max-height: 25rem) {
-            position: static;
-            margin-top: 1rem;
+            display: none;
         }
     }
 }
